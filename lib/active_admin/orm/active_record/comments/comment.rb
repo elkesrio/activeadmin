@@ -1,6 +1,8 @@
 # frozen_string_literal: true
+require_relative "../comment_base.rb"
+
 module ActiveAdmin
-  class Comment < ActiveRecord::Base
+  class Comment < CommentBase
 
     self.table_name = "#{table_name_prefix}active_admin_comments#{table_name_suffix}"
 
